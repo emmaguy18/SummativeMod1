@@ -1,4 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+body {
+  background-color: #ff69b4; }
+
+.nav li {
+  font-family: Noto Sans;
+  color: #FFFFFF;
+  font-size: 25px;
+  text-decoration: none;
+  list-style: none; }
+
+#heading {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  color: #000000;
+  font-size: 43px; }
+
+#subHeading {
+  font-family: Roboto Slab;
+  font-weight: 300;
+  color: #000000;
+  font-size: 40px; }
+
+.containerMenuTitle h3 {
+  font-family: Noto Sans;
+  font-size: 30px;
+  color: #000000; }
+
+.containerMenuIngre h4 {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000; }
+
+.containerMenu li {
+  font-family: Noto Sans;
+  font-size: 18px;
+  color: #000000;
+  list-style: none; }
+
+.btn h4 {
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000; }
+
+.radioText {
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 17px;
+  color: #F4B3C8; }
+
+#key h5 {
+  font-family: Noto Sans;
+  font-size: 13px;
+  color: #4A4A4A; }
+
+#footer h5 {
+  font-family: Noto Sans;
+  font-size: 15px;
+  color: #4A4A4A; }
 
 /*# sourceMappingURL=stylesheet.css.map */

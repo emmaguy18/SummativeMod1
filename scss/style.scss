@@ -4,23 +4,114 @@ $primaryFont: Noto Sans;
 $secondaryFont: Roboto Slab;
 $primaryFontCol: #000000;
 $secondaryFontCol: #FFFFFF;
-$headingFont: Roboto Slab 700;
-$menuSubHead: Robot Slab 700;
 
-@mixin font-face{
-  font-family: $primaryFont;
-  color: $secondaryFontCol;
-  font-size: 25px;
+@mixin nav{
+    font-family: $primaryFont;
+    color: $secondaryFontCol;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
 }
 
-@mixin font-face{
-  font-family: $headingFont;
+@mixin heading{
+  font-family: $secondaryFont;
+  font-weight: 700;
   color: $primaryFontCol;
   font-size: 43px;
 }
 
-@mixin font-face{
-  font-family: $subHeadingFont;
+@mixin subheading{
+  font-family: $secondaryFont;
+  font-weight: 300;
   color: $primaryFontCol;
   font-size: 40px;
+}
+
+@mixin menuHeading{
+  font-family: $primaryFont;
+  font-size: 30px;
+  color: $primaryFontCol;
+}
+
+@mixin menuSubheading{
+  font-family: $secondaryFont;
+  font-weight:700;
+  font-size: 20px;
+  color: $primaryFontCol;
+}
+
+@mixin mainbodyText{
+  font-family: $primaryFont;
+  font-size: 18px;
+  color: $primaryFontCol;
+  list-style: none;
+}
+
+@mixin btnText{
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 17px;
+  color: $primaryFontCol;
+}
+
+@mixin radioFont{
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 17px;
+  color: #F4B3C8;
+}
+
+@mixin keyFont{
+  font-family: $primaryFont;
+  font-size: 13px;
+  color: #4A4A4A;
+}
+
+@mixin footerFont{
+  font-family: $primaryFont;
+  font-size: 15px;
+  color: #4A4A4A;
+}
+
+body{
+  background-color: #ff69b4;
+}
+
+.nav li{
+  @include nav;
+}
+
+#heading{
+  @include heading;
+}
+#subHeading{
+  @include subheading;
+}
+
+.containerMenuTitle h3{
+    @include menuHeading;
+}
+
+.containerMenuIngre h4{
+  @include menuSubheading;
+}
+
+.containerMenu li{
+  @include mainbodyText;
+}
+
+.btn h4{
+  @include btnText;
+}
+
+.radioText{
+  @include radioFont;
+}
+
+#key h5{
+  @include keyFont;
+}
+
+#footer h5{
+  @include footerFont;
 }
