@@ -8,7 +8,7 @@ $secondaryFontCol: #FFFFFF;
 @mixin navFont{
     font-family: $primaryFont;
     color: $secondaryFontCol;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
     list-style: none;
 }
@@ -17,19 +17,19 @@ $secondaryFontCol: #FFFFFF;
   font-family: $secondaryFont;
   font-weight: 700;
   color: $primaryFontCol;
-  font-size: 43px;
+  font-size: 35px;
 }
 
 @mixin subheadingFont{
   font-family: $secondaryFont;
   font-weight: 300;
   color: $primaryFontCol;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @mixin menuHeading{
   font-family: $primaryFont;
-  font-size: 30px;
+  font-size: 25px;
   color: $primaryFontCol;
 }
 
@@ -73,9 +73,9 @@ $secondaryFontCol: #FFFFFF;
   color: #4A4A4A;
 }
 
-body{
-  background-color: #ff69b4;
-}
+// body{
+//   background-color: #ff69b4;
+// }
 
 .nav li{
   @include navFont;

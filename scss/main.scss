@@ -1,2 +1,56 @@
-@import 'fontStyling';
-@import 'layout';
+@import '_fontStyling';
+@import '_layout';
+$imgWidth: 455px;
+$imgHeight: 396px;
+$headingOp: rgba(255, 255, 255, 0.8);
+
+@mixin imgStyling{
+  width: $imgWidth;
+  height: $imgHeight;
+}
+
+@mixin bannerImgStyle{
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#charSiuImg{
+  @include imgStyling;
+}
+
+#lemChickImg{
+  @include imgStyling;
+}
+
+#shoyuImg{
+  @include imgStyling;
+}
+
+#simpleImg{
+  @include imgStyling;
+}
+
+.nav{
+  background-color: #EB6F97;
+}
+
+.bannerContainer{
+  @include bannerImgStyle;
+  background-image: url('../img/bannerImg.jpg');
+}
+
+#heading h1{
+  font-weight: 700;
+  background-color: $headingOp;
+  width: 80%;
+  padding-left: 2%;
+}
+
+#subHeading h2{
+  font-weight: 300;
+  background-color: $headingOp;
+  width: 35%;
+  padding-left: 2.5%;
+}

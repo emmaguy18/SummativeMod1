@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-body {
-  background-color: #ff69b4; }
-
 .nav li {
   font-family: Noto Sans;
   color: #FFFFFF;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   list-style: none; }
 
@@ -14,17 +11,17 @@ body {
   font-family: Roboto Slab;
   font-weight: 700;
   color: #000000;
-  font-size: 43px; }
+  font-size: 35px; }
 
 #subHeading {
   font-family: Roboto Slab;
   font-weight: 300;
   color: #000000;
-  font-size: 40px; }
+  font-size: 30px; }
 
 .containerMenuTitle h3 {
   font-family: Noto Sans;
-  font-size: 30px;
+  font-size: 25px;
   color: #000000; }
 
 .containerMenuIngre h4 {
@@ -112,5 +109,193 @@ body {
 
 .col12 {
   width: 100%; }
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  height: 15vh;
+  z-index: 1; }
+  .nav .imgLogoContainer #imgLogo {
+    width: 200px;
+    margin: 20px 0 0 20px; }
+  .nav ul {
+    width: 80%;
+    margin-left: 25%;
+    position: absolute;
+    top: 50px; }
+  .nav li {
+    display: inline-block;
+    width: 20%;
+    height: 5vh;
+    float: left;
+    margin-bottom: 1%; }
+
+.textContainer h1 {
+  position: relative;
+  top: 380px;
+  left: 300px; }
+
+.textContainer h2 {
+  position: absolute;
+  top: 600px;
+  left: 500px; }
+
+.containerMenu {
+  margin-left: 3%; }
+
+.containerMenuTitle h3 {
+  padding-left: 15%;
+  padding-bottom: 5%; }
+
+.containerMenuIngre h4 {
+  margin-bottom: 4%; }
+
+@media (min-width: 479px) {
+  .colS1 {
+    width: 8.3333333333%; }
+
+  .colS2 {
+    width: 16.6666666667%; }
+
+  .colS3 {
+    width: 25%; }
+
+  .colS4 {
+    width: 33.3333333333%; }
+
+  .colS5 {
+    width: 41.6666666667%; }
+
+  .colS6 {
+    width: 50%; }
+
+  .colS7 {
+    width: 58.3333333333%; }
+
+  .colS8 {
+    width: 66.6666666667%; }
+
+  .colS9 {
+    width: 75%; }
+
+  .colS10 {
+    width: 83.3333333333%; }
+
+  .colS11 {
+    width: 91.6666666667%; }
+
+  .colS12 {
+    width: 100%; } }
+@media (min-width: 768px) {
+  .colM1 {
+    width: 8.3333333333%; }
+
+  .colM2 {
+    width: 16.6666666667%; }
+
+  .colM3 {
+    width: 25%; }
+
+  .colM4 {
+    width: 33.3333333333%; }
+
+  .colM5 {
+    width: 41.6666666667%; }
+
+  .colM6 {
+    width: 50%; }
+
+  .colM7 {
+    width: 58.3333333333%; }
+
+  .colM8 {
+    width: 66.6666666667%; }
+
+  .colM9 {
+    width: 75%; }
+
+  .colM10 {
+    width: 83.3333333333%; }
+
+  .colM11 {
+    width: 91.6666666667%; }
+
+  .colM12 {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  .colL1 {
+    width: 8.3333333333%; }
+
+  .colL2 {
+    width: 16.6666666667%; }
+
+  .colL3 {
+    width: 25%; }
+
+  .colL4 {
+    width: 33.3333333333%; }
+
+  .colL5 {
+    width: 41.6666666667%; }
+
+  .colL6 {
+    width: 50%; }
+
+  .colL7 {
+    width: 58.3333333333%; }
+
+  .colL8 {
+    width: 66.6666666667%; }
+
+  .colL9 {
+    width: 75%; }
+
+  .colL10 {
+    width: 83.3333333333%; }
+
+  .colL11 {
+    width: 91.6666666667%; }
+
+  .colL12 {
+    width: 100%; } }
+#charSiuImg {
+  width: 455px;
+  height: 396px; }
+
+#lemChickImg {
+  width: 455px;
+  height: 396px; }
+
+#shoyuImg {
+  width: 455px;
+  height: 396px; }
+
+#simpleImg {
+  width: 455px;
+  height: 396px; }
+
+.nav {
+  background-color: #EB6F97; }
+
+.bannerContainer {
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bannerImg.jpg"); }
+
+#heading h1 {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  padding-left: 2%; }
+
+#subHeading h2 {
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 35%;
+  padding-left: 2.5%; }
 
 /*# sourceMappingURL=stylesheet.css.map */
