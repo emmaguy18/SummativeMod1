@@ -5,7 +5,7 @@ $secondaryFont: Roboto Slab;
 $primaryFontCol: #000000;
 $secondaryFontCol: #FFFFFF;
 
-@mixin nav{
+@mixin navFont{
     font-family: $primaryFont;
     color: $secondaryFontCol;
     font-size: 25px;
@@ -13,14 +13,14 @@ $secondaryFontCol: #FFFFFF;
     list-style: none;
 }
 
-@mixin heading{
+@mixin headingFont{
   font-family: $secondaryFont;
   font-weight: 700;
   color: $primaryFontCol;
   font-size: 43px;
 }
 
-@mixin subheading{
+@mixin subheadingFont{
   font-family: $secondaryFont;
   font-weight: 300;
   color: $primaryFontCol;
@@ -78,14 +78,14 @@ body{
 }
 
 .nav li{
-  @include nav;
+  @include navFont;
 }
 
 #heading{
-  @include heading;
+  @include headingFont;
 }
 #subHeading{
-  @include subheading;
+  @include subheadingFont;
 }
 
 .containerMenuTitle h3{
