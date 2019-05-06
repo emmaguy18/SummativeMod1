@@ -117,6 +117,40 @@
   overflow: hidden;
   height: 15vh;
   z-index: 1; }
+  .nav #navHam {
+    min-height: 10px;
+    padding: 10px;
+    background-color: #EB6F97; }
+    .nav #navHam #navHam::after {
+      clear: both;
+      content: '';
+      display: block; }
+    .nav #navHam #navIcon {
+      display: none; }
+    .nav #navHam #navList {
+      display: block;
+      float: right; }
+    .nav #navHam #navList li {
+      float: left; }
+    @media screen and (max-width: 600px) {
+      .nav #navHam #navIcon {
+        display: block;
+        float: right;
+        color: white; }
+      .nav #navHam #navList {
+        display: none;
+        float: none;
+        clear: both;
+        border-top: 1px solid white; }
+      .nav #navHam #list ul li {
+        float: none;
+        padding-top: 20px; }
+      .nav #navHam #navList li:hover {
+        background-color: #EB6F97;
+        opacity: 50%; } }
+    @media screen and (min-width: 601px) {
+      .nav #navHam #navList {
+        display: inline-block !important; } }
   .nav .imgLogoContainer #imgLogo {
     width: 200px;
     margin: 20px 0 0 20px; }

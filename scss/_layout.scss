@@ -31,6 +31,58 @@ $lgWidth: 1200px;
 }
 //Layout of content//
 .nav{
+  //hamburger nav//
+  #navHam{
+    min-height: 10px;
+    padding: 10px;
+    background-color: #EB6F97;
+    #navHam::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+  #navIcon{
+    display: none;
+  }
+  #navList{
+    display: block;
+    float: right
+}
+
+  #navList li{
+    float: left;
+  }
+  @media screen and (max-width: 600px){
+    #navIcon{
+        display: block;
+        float: right;
+        color: white;
+    }
+
+    #navList{
+      display: none;
+      float: none;
+      clear: both;
+      border-top: 1px solid white;
+}
+
+    #list ul li{
+    float: none;
+    padding-top: 20px;
+    }
+
+    #navList li:hover{
+        background-color: #EB6F97;
+        opacity: 50%;
+    }
+  }
+  @media screen and (min-width: 601px){
+    #navList{
+      display: inline-block !important;
+    }
+  }
+
+  }
     display: block;
     position: fixed;
     top: 0;
@@ -51,7 +103,6 @@ $lgWidth: 1200px;
       margin-left: 25%;
       position: absolute;
       top: 50px;
-
     }
     li{
       display: inline-block;
@@ -87,18 +138,7 @@ $lgWidth: 1200px;
   h4{
     margin-bottom: 4%;
   }
-
-
-
-
 }
-
-
-
-
-
-
-
 
 //media queries for Grid//
 @media (min-width: $smWidth) {

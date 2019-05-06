@@ -2,17 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ramen Shop</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
   </head>
   <body>
 <!--Nav bar-->
     <div class="row">
-      <div class="colL12 colM6 colS6 nav">
+      <div id="navHam" class="colL12 colM6 colS6 nav">
         <div class="colL2 colM5 colS5 imgLogoContainer">
           <img id="imgLogo" src="img/Ramenlogo.png" alt="The Ramen Shop Logo">
         </div>
-        <ul>
+
+        <div id="navIcon" onclick="showNav()">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+        <ul id="navList">
           <li>Ramen</li>
           <li>Rice Bowls</li>
           <li>Snacks</li>
@@ -252,5 +263,9 @@
   <div id="footer"class="col12">
     <h5>&copy; The Ramen Shop 2019</h5>
   </div>
+
+  <script type="text/javascript" src="js/script.js">
+
+  </script>
   </body>
 </html>
