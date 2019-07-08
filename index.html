@@ -5,32 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ramen Shop</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-  </script>
   </head>
   <body>
 <!--Nav bar-->
-    <div class="row">
-      <div id="navHam" class="colL12 colM6 colS6 nav">
-        <div class="colL2 colM5 colS5 imgLogoContainer">
-          <img id="imgLogo" src="img/Ramenlogo.png" alt="The Ramen Shop Logo">
-        </div>
-
-        <div id="navIcon" onclick="showNav()">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-        <ul id="navList">
-          <li>Ramen</li>
-          <li>Rice Bowls</li>
-          <li>Snacks</li>
-          <li>Drinks</li>
-        </ul>
+<div class="row">
+    <div class="colL12 colM6 colS6 nav">
+      <!--logo-->
+      <div class="colL2 colM5 colS5 nav-item-img">
+        <img id="logo" src="img/Ramenlogo.png" alt="The Ramen Shop Logo">
       </div>
+
+      <!-- <div id="navIcon" onclick="showNav()">
+          <i class="fas fa-bars"></i>
+      </div> -->
+
+      <ul class="nav-list">
+        <li class="nav-item">Ramen</li>
+        <li class="nav-item">Rice Bowls</li>
+        <li class="nav-item">Snacks</li>
+        <!--dropdown menu-->
+        <li class="nav-item dropdown">
+          <button class="nav-item dropBtn">Drinks</button>
+            <div class="dropdown-menu">
+              <li class="dropdown-item">Non-Alcohol</li>
+              <li class="dropdown-item">Alcohol</li>
+            </div>
+        </li>
+
+
+
+        <!-- <div class="dropdownContent">
+              <a class="dropdownContent navListItem"><li>Non-Alcohol</li></a>
+              <button class="dropbtn navListItem"><li>Alcohol</li></button>
+                <div id="alcOptions" class="dropdownContent navListItem">
+                    <ul id="alcListItem">
+                      <li>Beer</li>
+                      <li>Wine</li>
+                      <li>Sake</li>
+                      <li>Umeshu</li>
+                      <li>Shochu</li>
+                    </ul>
+                </div>
+            </div> -->
+        </ul>
     </div>
+
+  </div>
 <!--Image Banner-->
   <div class="row">
     <div class="colL12 colM12 colS12 banner bannerContainer">
@@ -263,9 +283,7 @@
   <div id="footer"class="col12">
     <h5>&copy; The Ramen Shop 2019</h5>
   </div>
-
-  <script type="text/javascript" src="js/script.js">
-
-  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

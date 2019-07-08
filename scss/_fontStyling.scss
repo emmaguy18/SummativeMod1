@@ -13,6 +13,14 @@ $secondaryFontCol: #FFFFFF;
     list-style: none;
 }
 
+@mixin navSubHeading{
+    font-family: $primaryFont;
+    color: $secondaryFontCol;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
 @mixin headingFont{
   font-family: $secondaryFont;
   font-weight: 700;
@@ -77,8 +85,12 @@ $secondaryFontCol: #FFFFFF;
 //   background-color: #ff69b4;
 // }
 
-.nav li{
+.nav-item{
   @include navFont;
+}
+
+.dropdown-item{
+  @include navSubHeading;
 }
 
 #heading{
