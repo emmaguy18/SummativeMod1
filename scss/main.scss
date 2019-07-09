@@ -4,6 +4,33 @@ $imgWidth: 455px;
 $imgHeight: 396px;
 $headingOp: rgba(255, 255, 255, 0.8);
 
+@mixin navStyling{
+    background-color: #EB6F97;
+  }
+
+  .nav{
+    @include navStyling;
+  }
+
+@mixin dropdownStyling{
+    background-color: #EB6F97;
+    opacity: 0.8;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+
+  .dropdown-content{
+    @include dropdownStyling;
+  }
+
+  @mixin dropBtn{
+    border: none;
+    background: none;
+  }
+
+
+
+
 @mixin imgStyling{
   width: $imgWidth;
   height: $imgHeight;
@@ -31,8 +58,6 @@ $headingOp: rgba(255, 255, 255, 0.8);
 #simpleImg{
   @include imgStyling;
 }
-
-
 
 .bannerContainer{
   @include bannerImgStyle;
