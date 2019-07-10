@@ -3,34 +3,41 @@
 $imgWidth: 455px;
 $imgHeight: 396px;
 
+//nav dropdown//
 @mixin dropdownStyling{
     background-color: #EB6F97;
     opacity: 0.8;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-  }
+  };
 
   .dropdown-content{
     @include dropdownStyling;
-  }
+  };
 
   @mixin dropBtn{
     border: none;
     background: none;
-  }
+  };
 
-@mixin imgStyling{
-  width: $imgWidth;
-  height: $imgHeight;
-}
-
+//header//
 @mixin bannerImgStyle{
   background-repeat: no-repeat;
   // background-size: cover;
   background-size: 1900px 1030px;
-}
+};
 
-#charSiuImg{
+#banner-header-content{
+  @include bannerImgStyle;
+  background-image: url('../img/bannerImg.jpg');
+};
+
+//menu content//
+@mixin imgStyling{
+  width: $imgWidth;
+  height: $imgHeight;
+};
+
+#container-item-img-1{
   @include imgStyling;
 }
 
@@ -46,7 +53,13 @@ $imgHeight: 396px;
   @include imgStyling;
 }
 
-#banner-header-content{
-  @include bannerImgStyle;
-  background-image: url('../img/bannerImg.jpg');
+
+
+//button//
+.radio-bttn-pink{
+  background-color: #f4b3c8;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }

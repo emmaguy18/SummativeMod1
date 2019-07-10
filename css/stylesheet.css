@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
 .nav-item {
   font-family: Noto Sans;
   color: #FFFFFF;
@@ -28,28 +28,28 @@
   font-size: 45px;
   text-align: center; }
 
-.containerMenuTitle h3 {
+.title-large {
   font-family: Noto Sans;
   font-size: 25px;
-  color: #000000; }
+  color: #000000;
+  text-align: center; }
 
-.containerMenuIngre h4 {
+.subTitle-bold {
   font-family: Roboto Slab;
   font-weight: 700;
   font-size: 20px;
   color: #000000; }
 
-.containerMenu li {
+.container-list-item {
   font-family: Noto Sans;
   font-size: 18px;
   color: #000000;
   list-style: none; }
 
-.btn h4 {
+#radio-bttn-text {
   font-family: Noto Sans;
-  font-weight: 700;
-  font-size: 17px;
-  color: #000000; }
+  font-size: 20px;
+  color: #FFFFFF; }
 
 .radioText {
   font-family: Noto Sans;
@@ -111,6 +111,11 @@
   position: relative;
   height: 8vh;
   background-color: #EB6F97; }
+  .nav .nav-item-img {
+    margin: 0; }
+    .nav .nav-item-img #logo {
+      width: 50%;
+      margin: 5% 0 0 15%; }
   .nav .nav-list {
     width: 50%;
     margin-left: 20%;
@@ -136,30 +141,6 @@
         margin-bottom: 3%; }
       .nav .nav-list .dropdown .dropdown-content .drop-text-med {
         font-size: 18px; }
-  @media screen and (max-width: 600px) {
-    .nav #navIcon {
-      display: block;
-      float: right;
-      color: white; }
-    .nav #navList {
-      display: none;
-      float: none;
-      clear: both;
-      border-top: 1px solid white; }
-    .nav #navList ul li {
-      float: none;
-      padding-top: 20px; }
-    .nav #navList li:hover {
-      background-color: #EB6F97;
-      opacity: 50%; } }
-  @media screen and (min-width: 601px) {
-    .nav #navList {
-      display: inline-block !important; } }
-  .nav .nav-item-img {
-    margin: 0; }
-    .nav .nav-item-img #logo {
-      width: 50%;
-      margin: 5% 0 0 15%; }
 
 .banner-header {
   width: 100%;
@@ -183,15 +164,16 @@
     width: 65%;
     padding: 2% 3%; }
 
-.containerMenu {
-  margin-left: 3%; }
+.container-item {
+  margin: 1% 1% 0 5%; }
+  .container-item .title-large {
+    width: 20%;
+    margin-left: 10%; }
+  .container-item .container-item-content .subTitle-bold {
+    margin-bottom: 4%; }
 
-.containerMenuTitle h3 {
-  padding-left: 15%;
-  padding-bottom: 5%; }
-
-.containerMenuIngre h4 {
-  margin-bottom: 4%; }
+.radio-content {
+  width: 20%; }
 
 @media (min-width: 479px) {
   .colS1 {
@@ -306,7 +288,12 @@
   opacity: 0.8;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
 
-#charSiuImg {
+#banner-header-content {
+  background-repeat: no-repeat;
+  background-size: 1900px 1030px;
+  background-image: url("../img/bannerImg.jpg"); }
+
+#container-item-img-1 {
   width: 455px;
   height: 396px; }
 
@@ -322,9 +309,11 @@
   width: 455px;
   height: 396px; }
 
-#banner-header-content {
-  background-repeat: no-repeat;
-  background-size: 1900px 1030px;
-  background-image: url("../img/bannerImg.jpg"); }
+.radio-bttn-pink {
+  background-color: #f4b3c8;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=stylesheet.css.map */
