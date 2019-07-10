@@ -1,69 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
 .nav-item {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  font-weight: 400; }
 
 .dropdown-item {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   color: #FFFFFF;
   font-size: 15px;
   text-decoration: none;
   list-style: none; }
 
 #heading-large {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   color: #000000;
   font-size: 50px;
   text-align: center; }
 
 #subHeading-med {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   color: #000000;
   font-size: 45px;
   text-align: center; }
 
 .title-large {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   font-size: 25px;
   color: #000000;
-  text-align: center; }
+  text-align: center;
+  font-weight: 400; }
 
 .subTitle-bold {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #000000; }
 
 .container-list-item {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   color: #000000;
-  list-style: none; }
+  list-style: none;
+  font-weight: 400; }
 
 #radio-bttn-text {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   color: #FFFFFF; }
 
-.radioText {
-  font-family: Noto Sans;
+.checkmark-text-pink {
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: #F4B3C8; }
 
 #key h5 {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   color: #4A4A4A; }
 
 #footer h5 {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
   color: #4A4A4A; }
 
@@ -169,11 +173,18 @@
   .container-item .title-large {
     width: 20%;
     margin-left: 10%; }
-  .container-item .container-item-content .subTitle-bold {
-    margin-bottom: 4%; }
+  .container-item .container-item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; }
+    .container-item .container-item-content .subTitle-bold {
+      margin-bottom: 4%; }
 
 .radio-content {
-  width: 20%; }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
 
 @media (min-width: 479px) {
   .colS1 {
@@ -314,6 +325,20 @@
   text-decoration: none;
   text-align: center;
   border: none;
-  cursor: pointer; }
+  border-radius: 5%;
+  cursor: pointer;
+  padding: 4%; }
+
+.checkmark-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .checkmark-container .checkmark-container input {
+    position: absolute;
+    opacity: 0; }
 
 /*# sourceMappingURL=stylesheet.css.map */

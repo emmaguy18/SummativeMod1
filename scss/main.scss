@@ -61,5 +61,25 @@ $imgHeight: 396px;
   text-decoration: none;
   text-align: center;
   border: none;
+  border-radius: 5%;
   cursor: pointer;
+  padding: 4%;
+}
+
+//checkmark radio button//
+.checkmark-container{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .checkmark-container input{
+    position: absolute;
+    opacity: 0;
+  }
+  .checkmark-bttn{
+
+  }
 }
