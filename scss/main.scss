@@ -2,21 +2,12 @@
 @import '_layout';
 $imgWidth: 455px;
 $imgHeight: 396px;
-$headingOp: rgba(255, 255, 255, 0.8);
-
-@mixin navStyling{
-    background-color: #EB6F97;
-  }
-
-  .nav{
-    @include navStyling;
-  }
 
 @mixin dropdownStyling{
     background-color: #EB6F97;
     opacity: 0.8;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+
   }
 
   .dropdown-content{
@@ -28,19 +19,15 @@ $headingOp: rgba(255, 255, 255, 0.8);
     background: none;
   }
 
-
-
-
 @mixin imgStyling{
   width: $imgWidth;
   height: $imgHeight;
 }
 
 @mixin bannerImgStyle{
-  width: 100%;
-  height: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 1900px 1030px;
 }
 
 #charSiuImg{
@@ -59,21 +46,7 @@ $headingOp: rgba(255, 255, 255, 0.8);
   @include imgStyling;
 }
 
-.bannerContainer{
+#banner-header-content{
   @include bannerImgStyle;
   background-image: url('../img/bannerImg.jpg');
-}
-
-#heading h1{
-  font-weight: 700;
-  background-color: $headingOp;
-  width: 80%;
-  padding-left: 2%;
-}
-
-#subHeading h2{
-  font-weight: 300;
-  background-color: $headingOp;
-  width: 35%;
-  padding-left: 2.5%;
 }

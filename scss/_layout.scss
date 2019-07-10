@@ -9,6 +9,7 @@ $columnsWidth: 100% / $columns;
 $smWidth: 479px;
 $mdWidth: 768px;
 $lgWidth: 1200px;
+$headingOp: rgba(255, 255, 255, 0.8);
 @mixin rowClear{
   clear: both;
   display: block;
@@ -38,13 +39,13 @@ $lgWidth: 1200px;
 //Layout of content//
 
 @mixin dropdownContent{
-  // display: none;
+  display: none;
   position: absolute;
   overflow: hidden;
-  min-width: 15%;
-  margin-top: 1%;
+  min-width: 20%;
+  margin-top: 2.8%;
   margin-left: -2%;
-  padding: 1%;
+  padding: 2%;
   z-index: 1;
 }
 
@@ -53,24 +54,23 @@ $lgWidth: 1200px;
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 10vh;
+  height: 8vh;
+  background-color: #EB6F97;
 
   .nav-list{
-    width: 80%;
+    width: 50%;
     margin-left: 20%;
     position: absolute;
     top: 25%;
 
       .nav-item{
         display: inline-block;
-        width: 20%;
         height: 5vh;
         float: left;
-        padding-left: 5%;
+        padding: 0 2% 0 10%;
        };
 
       .dropdown{
-        padding: 0;
             .dropdown-content{
               @include dropdownContent;
               .dropdown-list{
@@ -144,25 +144,41 @@ $lgWidth: 1200px;
   }
 
 
+//header layout//
+
+.banner-header{
+  width: 100%;
+  height: 80vh;
+}
 
 
-
-
-
-
-
-
- .textContainer h1{
+ .header-item-large{
   position: relative;
-  top: 380px;
-  left: 300px;
+  top: 30%;
+  left: 30%;
+
+  #heading-large{
+    background-color: $headingOp;
+    width: 45%;
+    padding: 1% 2%;
+  }
 }
 
-.textContainer h2{
+.header-item-small{
   position: absolute;
-  top: 600px;
-  left: 500px;
+  top: 50%;
+  left: 35%;
+
+  #subHeading-med{
+    background-color: $headingOp;
+    width: 65%;
+    padding: 2% 3%;
+  }
 }
+
+
+
+
 
 .containerMenu{
   margin-left: 3%;

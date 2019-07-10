@@ -14,17 +14,19 @@
   text-decoration: none;
   list-style: none; }
 
-#heading {
+#heading-large {
   font-family: Roboto Slab;
   font-weight: 700;
   color: #000000;
-  font-size: 35px; }
+  font-size: 50px;
+  text-align: center; }
 
-#subHeading {
+#subHeading-med {
   font-family: Roboto Slab;
   font-weight: 300;
   color: #000000;
-  font-size: 30px; }
+  font-size: 45px;
+  text-align: center; }
 
 .containerMenuTitle h3 {
   font-family: Noto Sans;
@@ -107,34 +109,33 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 10vh; }
+  height: 8vh;
+  background-color: #EB6F97; }
   .nav .nav-list {
-    width: 80%;
+    width: 50%;
     margin-left: 20%;
     position: absolute;
     top: 25%; }
     .nav .nav-list .nav-item {
       display: inline-block;
-      width: 20%;
       height: 5vh;
       float: left;
-      padding-left: 5%; }
-    .nav .nav-list .dropdown {
-      padding: 0; }
-      .nav .nav-list .dropdown .dropdown-content {
-        position: absolute;
-        overflow: hidden;
-        min-width: 15%;
-        margin-top: 1%;
-        margin-left: -2%;
-        padding: 1%;
-        z-index: 1; }
-        .nav .nav-list .dropdown .dropdown-content .dropdown-item {
-          width: 80%;
-          margin-left: 10%;
-          margin-bottom: 3%; }
-        .nav .nav-list .dropdown .dropdown-content .drop-text-med {
-          font-size: 18px; }
+      padding: 0 2% 0 10%; }
+    .nav .nav-list .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      min-width: 20%;
+      margin-top: 2.8%;
+      margin-left: -2%;
+      padding: 2%;
+      z-index: 1; }
+      .nav .nav-list .dropdown .dropdown-content .dropdown-item {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 3%; }
+      .nav .nav-list .dropdown .dropdown-content .drop-text-med {
+        font-size: 18px; }
   @media screen and (max-width: 600px) {
     .nav #navIcon {
       display: block;
@@ -160,15 +161,27 @@
       width: 50%;
       margin: 5% 0 0 15%; }
 
-.textContainer h1 {
-  position: relative;
-  top: 380px;
-  left: 300px; }
+.banner-header {
+  width: 100%;
+  height: 80vh; }
 
-.textContainer h2 {
+.header-item-large {
+  position: relative;
+  top: 30%;
+  left: 30%; }
+  .header-item-large #heading-large {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 45%;
+    padding: 1% 2%; }
+
+.header-item-small {
   position: absolute;
-  top: 600px;
-  left: 500px; }
+  top: 50%;
+  left: 35%; }
+  .header-item-small #subHeading-med {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 65%;
+    padding: 2% 3%; }
 
 .containerMenu {
   margin-left: 3%; }
@@ -288,9 +301,6 @@
 
   .colL12 {
     width: 100%; } }
-.nav {
-  background-color: #EB6F97; }
-
 .dropdown-content {
   background-color: #EB6F97;
   opacity: 0.8;
@@ -312,23 +322,9 @@
   width: 455px;
   height: 396px; }
 
-.bannerContainer {
-  width: 100%;
-  height: 800px;
+#banner-header-content {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1900px 1030px;
   background-image: url("../img/bannerImg.jpg"); }
-
-#heading h1 {
-  font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 80%;
-  padding-left: 2%; }
-
-#subHeading h2 {
-  font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 35%;
-  padding-left: 2.5%; }
 
 /*# sourceMappingURL=stylesheet.css.map */

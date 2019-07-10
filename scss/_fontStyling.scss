@@ -11,7 +11,6 @@ $secondaryFontCol: #FFFFFF;
     font-size: 30px;
     text-decoration: none;
     list-style: none;
-    // font-weight: 400;
 }
 
 @mixin navSubHeading{
@@ -26,14 +25,16 @@ $secondaryFontCol: #FFFFFF;
   font-family: $secondaryFont;
   font-weight: 700;
   color: $primaryFontCol;
-  font-size: 35px;
+  font-size: 50px;
+  text-align: center;
 }
 
 @mixin subheadingFont{
   font-family: $secondaryFont;
   font-weight: 300;
   color: $primaryFontCol;
-  font-size: 30px;
+  font-size: 45px;
+  text-align: center;
 }
 
 @mixin menuHeading{
@@ -94,10 +95,10 @@ $secondaryFontCol: #FFFFFF;
   @include navSubHeading;
 }
 
-#heading{
+#heading-large{
   @include headingFont;
 }
-#subHeading{
+#subHeading-med{
   @include subheadingFont;
 }
 
