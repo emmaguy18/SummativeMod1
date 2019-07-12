@@ -188,22 +188,32 @@ $headingOp: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
+    margin-left: 0;
     .subTitle-bold{
       margin-bottom: 4%;
     };
   };
+
+  .radio-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+      .radio-bttn-pink{
+       margin-bottom: 2%
+     };
+  };
+
+  .checkmark-container{
+    display: flex;
+    flex-direction: row;
+    .checkmark-item{
+      margin-right: 2%;
+      padding-left: 2%;
+    };
+  };
+
 };
-
-.radio-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  // .radio-bttn-pink{
-  //
-  // }
-}
-
 
 
 

@@ -66,20 +66,34 @@ $imgHeight: 396px;
   padding: 4%;
 }
 
-//checkmark radio button//
-.checkmark-container{
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  .checkmark-container input{
-    position: absolute;
-    opacity: 0;
-  }
+//checkmark radio button styling//
   .checkmark-bttn{
+    display: block;
+    position: relative;
+    margin-bottom: 10%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    left: 20%;
 
-  }
-}
+    .checkmark-bttn input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    };
+
+    .checkmark{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2vh;
+      width: 60%;
+      background-color: #ffffff;
+      border: solid 0.5px #000000;
+      border-radius: 50%;
+    };
+  };
