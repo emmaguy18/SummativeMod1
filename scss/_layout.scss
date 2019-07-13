@@ -27,6 +27,8 @@ $headingOp: rgba(255, 255, 255, 0.8);
 }
 
 .row{
+  display: flex;
+  flex-direction: row;
     &::after{
       @include rowClear;
     }
@@ -177,19 +179,22 @@ $headingOp: rgba(255, 255, 255, 0.8);
 //menu layout//
 
 .container-item{
-  margin: 1% 1% 0 5%;
+  // margin: 1% 1% 0 5%;
+  display: inline-block;
+  // margin-left: 3%;
+  margin-top: 1%;
 
   .title-large{
-    width: 20%;
-    margin-left: 10%;
+    width: 45%;
+    margin: 0 0 2% 10%;
   };
 
   .container-item-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
-    margin-left: 0;
+    // margin-left: 0;
     .subTitle-bold{
       margin-bottom: 4%;
     };
@@ -198,9 +203,10 @@ $headingOp: rgba(255, 255, 255, 0.8);
   .radio-content{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20%;
       .radio-bttn-pink{
-       margin-bottom: 2%
+       margin-bottom: 5%;
      };
   };
 
@@ -208,14 +214,19 @@ $headingOp: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: row;
     .checkmark-item{
-      margin-right: 2%;
-      padding-left: 2%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
     };
   };
-
 };
-
-
+#menu-item-1{
+  margin-left: 15%;
+}
+#menu-item-2{
+  margin-right: 15%;
+}
 
 
 

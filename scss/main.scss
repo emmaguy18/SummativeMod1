@@ -1,8 +1,9 @@
 @import '_fontStyling';
 @import '_layout';
-$imgWidth: 455px;
-$imgHeight: 396px;
-
+// $imgWidth: 455px;
+// $imgHeight: 396px;
+$imgWidth: 500px;
+$imgHeight: 450px;
 //nav dropdown//
 @mixin dropdownStyling{
     background-color: #EB6F97;
@@ -22,7 +23,6 @@ $imgHeight: 396px;
 //header//
 @mixin bannerImgStyle{
   background-repeat: no-repeat;
-  // background-size: cover;
   background-size: 1900px 1030px;
 };
 
@@ -41,15 +41,15 @@ $imgHeight: 396px;
   @include imgStyling;
 }
 
-#lemChickImg{
+#container-item-img-2{
   @include imgStyling;
 }
 
-#shoyuImg{
+#container-item-img-3{
   @include imgStyling;
 }
 
-#simpleImg{
+#container-item-img-4{
   @include imgStyling;
 }
 
@@ -68,6 +68,7 @@ $imgHeight: 396px;
 
 //checkmark radio button styling//
   .checkmark-bttn{
+    width: 70%;
     display: block;
     position: relative;
     margin-bottom: 10%;
@@ -76,7 +77,6 @@ $imgHeight: 396px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    left: 20%;
 
     .checkmark-bttn input{
       position: absolute;
@@ -90,10 +90,14 @@ $imgHeight: 396px;
       position: absolute;
       top: 0;
       left: 0;
-      height: 2vh;
-      width: 60%;
+      height: 1.7vh;
+      width: 100%;
       background-color: #ffffff;
-      border: solid 0.5px #000000;
+      border: solid 2px #000000;
       border-radius: 50%;
     };
   };
+
+.container-list{
+    min-width: 40%;
+}
